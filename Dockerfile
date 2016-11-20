@@ -4,11 +4,12 @@ MAINTAINER nimmis <kjell.havneskold@gmail.com>
 # disable interactive functions
 
 RUN echo "@testing http://dl-4.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories && \
+    echo "@edge https://nl.alpinelinux.org/alpine/edge/main" >> /etc/apk/repositories && \
     apk update && apk upgrade && \
 
     # Make info file about this build
     printf "Build of nimmis/alpine-apache-php7, date: %s\n"  `date -u +"%Y-%m-%dT%H:%M:%SZ"` >> /etc/BUILD && \
-
+    apk add libressl@edge && \
     apk add curl openssl && \
     apk add php7@community php7-apache2@community php7-openssl@community php7-mbstring@community && \
     apk add php7-apcu@testing php7-intl@community php7-mcrypt@community php7-json@community php7-gd@community php7-curl@community && \
