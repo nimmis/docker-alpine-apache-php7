@@ -1,12 +1,10 @@
 ## Alpine microcontainer with apache and php7
 
-This is a micro docker container [![](https://badge.imagelayers.io/nimmis/alpine-apache-php7:latest.svg)](https://imagelayers.io/?images=nimmis/alpine-apache-php7:latest) based on Alpine 3.4 and Apache 2.2 and php 7
+This is a micro docker container [![](https://images.microbadger.com/badges/image/nimmis/apache.svg)](https://microbadger.com/images/nimmis/apache "Get your own image badge on microbadger.com") based on Alpine 3.5, Apache 2.2 and php 7
 
 ### Examples
 
-This images are build on nimmis/alpine-micro which are a modified version of Alpine with a working 
-init process, and a working cron, logrotate  and syslog. Services are started with
-runit daemon, for more information about that see [nimmis/alpine-mico](https://registry.hub.docker.com/u/nimmis/alpine-micro/)
+This images are build on nimmis/alpine-micro [![](https://images.microbadger.com/badges/image/nimmis/alpine-micro.svg)](https://microbadger.com/images/nimmis/alpine-micro "Get your own image badge on microbadger.com")which are a modified version of Alpine with a working init process, and a working cron, logrotate  and syslog. Services are started with runit daemon, for more information about that see [nimmis/alpine-mico](https://registry.hub.docker.com/u/nimmis/alpine-micro/)
 
 
 #### starting the container as a daemon
