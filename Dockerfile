@@ -29,9 +29,6 @@ RUN  apk update && apk upgrade && \
     # waiting for module to be release on alpine
     # apk add php7-imagick@testing
 
-    # fix compatible with old scripts
-    ln -s /usr/bin/php7 /usr/bin/php && \
-
     # install composer
     cd /tmp && curl -sS https://getcomposer.org/installer | php && mv composer.phar /usr/local/bin/composer && \
 
